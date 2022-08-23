@@ -1,0 +1,59 @@
+{% load static %}
+
+<html>
+    <head> <title>Detection </title> </head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <body>
+        <div class="cont">
+        <div class="ti">
+        <h1>Edge Detection</h1></div>
+        
+        
+         
+        <form action="/external" method="post" enctype="multipart/form-data">
+            {% csrf_token %} 
+           
+           
+            <div class="fol">
+            <br>
+            <input type="file" name="image" required>
+            <br><br>
+            
+
+            <div class="res">
+            
+            {% if raw_url or edit_url %}
+            <div class="txt">
+                <div class="txt1">
+                <h1>Original                         </h1>
+                <br></div>
+                <div class="txt2">
+                
+                <h1>Converted</h1></div>
+            </div>
+            <div class="pics">
+            <div class="pic1">
+                
+                <img src={{raw_url}}>
+            </div>
+            <div class="pic2">
+            
+
+                
+                <img src={{edit_url}}>
+            </div>
+        </div>
+            {{data | safe}}
+            {% endif %} 
+            <br><br>
+            
+            <br><br>
+        </div>
+            <input type="submit" value="Convert and Download">
+            
+
+        </form>
+    </div>
+        
+    </body>
+</html>

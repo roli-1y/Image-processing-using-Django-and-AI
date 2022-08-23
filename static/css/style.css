@@ -1,0 +1,85 @@
+h1{
+    color:blue;
+}
+.ti {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family:cursive;
+    font-size: 0.9cm;
+    color: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);;
+    }
+    body{
+        background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+      margin: 0;
+    } 
+input[type=submit]{
+        margin-top: 13px;
+        padding: 10px;
+        color:  #ffffff;
+        font-weight: bold;
+        font-size: larger;
+        font-size: 1cm;
+        background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+        width: 100%;
+        border: none;
+        outline: #009578;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family:cursive;
+        transition-property: height;   
+        height: 145px;
+    }
+input[type=file]{
+        margin-top: 12px;
+        padding: 10px;
+        color:  #ffffff;
+        font-size: larger;
+        font-size: 0.6cm;
+        font-family:cursive;
+        font-weight: bold;
+        background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+        width: 100%;
+        border: none;
+        outline: #009578;
+        border-radius: 5px;
+        cursor: pointer;
+        transition-property: height;   
+    }
+.cont
+    {
+        padding: 90px;
+        background: #eeeeee;
+        margin-top: 9cm;
+        margin-left: 3cm;
+        margin-right: 3cm;
+    
+    }
+    .res{
+        display: flex;
+        flex-direction: column;
+     
+}
+.pics{
+        display: flex;
+        flex-direction: row;
+     
+}
+.txt{
+    display: flex;
+    flex-direction: row;
+
+}
+.txt2{
+    margin-left: 5.4cm;
+    font-family:cursive;
+}
+.txt1{
+    margin-left: 1.3cm;
+    font-family:cursive;
+}
+.pic1{
+    margin-left: 0.8cm;
+    margin-right: 3.2cm;
+
+}
